@@ -1,0 +1,40 @@
+﻿@page "/mapSwissTopo"
+
+@inject IJSRuntime JSRuntime
+
+
+<h1>SwissTopoMap</h1>
+
+<div id="maplibre-map" style="width: 100%; height: 500px;"></div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Call the JavaScript function to initialize the map
+            await InitializeMapAsync();
+        }
+    }
+
+    private async Task InitializeMapAsync()
+    {
+        // Use JavaScript interop to call the function defined in the script
+        await JSRuntime.InvokeVoidAsync("initializeMap");
+    }
+}
+
+@* Inline JavaScript in Blazor *@
+<script>
+    function initializeMap() {
+        var map = new maplibregl.Map({
+            container: 'maplibre-map',
+            style: 'https://vectortiles.geo.admin.ch/styles/ch.swisstopo.leichte-basiskarte_world.vt/style.json',
+            center: [8.265, 46.786], // starting position [lng, lat]
+            zoom: 7, // starting zoom
+        });
+        map.addControl(new maplibregl.NavigationControl());
+    }
+</script>
+
+
