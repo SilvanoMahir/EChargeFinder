@@ -4,7 +4,6 @@
 
 @inject IJSRuntime JSRuntime
 
-
 <h1>SwissTopoMap</h1>
 
 <div id="maplibre-map" style="width: 100%; height: 500px;"></div>
@@ -14,26 +13,6 @@
     private List<EVSEDataRecord> chargingStations = new List<EVSEDataRecord>();
     private List<GeoCoordinates> chargingStationsCoordinates = new List<GeoCoordinates>();
 
-    protected override async Task OnInitializedAsync()
-    {
-        string jsonData = await File.ReadAllTextAsync("C:\\Users\\Silvano\\Git\\EChargeFinder\\Resources\\JSON\\charging_stations.json");
-        try
-        {
-            var rootData = JsonSerializer.Deserialize<Root>(jsonData);
-            chargingStations = rootData.EVSEData.SelectMany(e => e.EVSEDataRecord).ToList();
-            foreach (var singleStation in chargingStations)
-            {
-                chargingStationsCoordinates.Add(singleStation.GeoCoordinates);
-            }
-
-            
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine(ex.Message);
-        }
-        
-    }
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
@@ -45,14 +24,35 @@
 
     private async Task InitializeMapAsync()
     {
-        // Use JavaScript interop to call the function defined in the script
-        await JSRuntime.InvokeVoidAsync("initializeMap");
+        string jsonData = File.ReadAllText("C:\\Users\\Silvano\\Git\\EChargeFinder\\Resources\\JSON\\charging_stations.json");
+        try
+        {
+            var rootData = JsonSerializer.Deserialize<Root>(jsonData);
+            chargingStations = rootData.EVSEData.SelectMany(e => e.EVSEDataRecord).ToList();
+            foreach (var singleStation in chargingStations)
+            {
+                chargingStationsCoordinates.Add(singleStation.GeoCoordinates);
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine(ex.Message);
+        }
+        var coordinatesArray = chargingStationsCoordinates
+            .Select(c => new
+            {
+                lat = c.Google.Split(' ')[0],
+                lng = c.Google.Split(' ')[1]
+            })
+            .ToArray();
+
+        await JSRuntime.InvokeVoidAsync("initializeMap", (object)coordinatesArray);
     }
 }
 
 @* Inline JavaScript in Blazor *@
 <script>
-    function initializeMap() {
+    function initializeMap(coordinatesArray) {
         var map = new maplibregl.Map({
             container: 'maplibre-map',
             style: 'https://vectortiles.geo.admin.ch/styles/ch.swisstopo.leichte-basiskarte_world.vt/style.json',
@@ -75,20 +75,12 @@
                 .addTo(map);
         }
 
-        var locations = [
-            { lngLat: [8.265, 46.786], text: 'Marker 1: Main location' },
-            { lngLat: [8.5417, 47.3769], text: 'Marker 2: Zurich' },
-            { lngLat: [7.4474, 46.9479], text: 'Marker 3: Bern' },
-            { lngLat: [6.6323, 46.5197], text: 'Marker 4: Lausanne' },
-            { lngLat: [7.5886, 47.5596], text: 'Marker 5: Basel' },
-            { lngLat: [9.5167, 47.1667], text: 'Marker 6: St. Gallen' }
-        ];
-
         var iconUrl = 'https://cdn4.iconfinder.com/data/icons/automotive-maintenance/100/automotive-electriccharger-512.png';
 
-        // Adding all markers to the map
-        locations.forEach(function (location) {
-            addMarker(location.lngLat, iconUrl, location.text);
+        // Adding markers based on the coordinates passed from C#
+        coordinatesArray.forEach(function (coordinate) {
+            var lngLat = [parseFloat(coordinate.lng), parseFloat(coordinate.lat)];
+            addMarker(lngLat, iconUrl, `Charging Station at (${coordinate.lat}, ${coordinate.lng})`);
         });
     }
 </script>
