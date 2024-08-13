@@ -1,4 +1,6 @@
 ﻿@page "/mapSwissTopo"
+@using System.Text.Json
+@using System.Diagnostics
 
 @inject IJSRuntime JSRuntime
 
@@ -8,6 +10,30 @@
 <div id="maplibre-map" style="width: 100%; height: 500px;"></div>
 
 @code {
+
+    private List<EVSEDataRecord> chargingStations = new List<EVSEDataRecord>();
+    private List<GeoCoordinates> chargingStationsCoordinates = new List<GeoCoordinates>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        string jsonData = await File.ReadAllTextAsync("C:\\Users\\Silvano\\Git\\EChargeFinder\\Resources\\JSON\\charging_stations.json");
+        try
+        {
+            var rootData = JsonSerializer.Deserialize<Root>(jsonData);
+            chargingStations = rootData.EVSEData.SelectMany(e => e.EVSEDataRecord).ToList();
+            foreach (var singleStation in chargingStations)
+            {
+                chargingStationsCoordinates.Add(singleStation.GeoCoordinates);
+            }
+
+            
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine(ex.Message);
+        }
+        
+    }
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
@@ -34,6 +60,36 @@
             zoom: 7, // starting zoom
         });
         map.addControl(new maplibregl.NavigationControl());
+
+        function addMarker(lngLat, iconUrl, popupText) {
+            var customIcon = document.createElement('img');
+            customIcon.src = iconUrl;
+            customIcon.style.width = '30px';  // Set the width of the icon
+            customIcon.style.height = '30px'; // Set the height of the icon
+
+            var popup = new maplibregl.Popup({ offset: 25 }).setText(popupText);
+
+            new maplibregl.Marker({ element: customIcon })
+                .setLngLat(lngLat)
+                .setPopup(popup)
+                .addTo(map);
+        }
+
+        var locations = [
+            { lngLat: [8.265, 46.786], text: 'Marker 1: Main location' },
+            { lngLat: [8.5417, 47.3769], text: 'Marker 2: Zurich' },
+            { lngLat: [7.4474, 46.9479], text: 'Marker 3: Bern' },
+            { lngLat: [6.6323, 46.5197], text: 'Marker 4: Lausanne' },
+            { lngLat: [7.5886, 47.5596], text: 'Marker 5: Basel' },
+            { lngLat: [9.5167, 47.1667], text: 'Marker 6: St. Gallen' }
+        ];
+
+        var iconUrl = 'https://cdn4.iconfinder.com/data/icons/automotive-maintenance/100/automotive-electriccharger-512.png';
+
+        // Adding all markers to the map
+        locations.forEach(function (location) {
+            addMarker(location.lngLat, iconUrl, location.text);
+        });
     }
 </script>
 
