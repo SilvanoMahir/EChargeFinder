@@ -110,6 +110,14 @@
 <script>
     var map;
 
+    // Icon URLs for different states
+    const iconUrls = {
+        Available: 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=10C027',
+        Occupied: 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=FF0303',
+        OutOfService: 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=FCC419',
+        Unknown: 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=7B7B7B'
+    };
+
     function initializeMap() {
         map = new L.Map('map', {
             crs: L.CRS.EPSG3857,
@@ -127,7 +135,18 @@
 
     function addMarkerToMap(lat, lng, id, availability, renewableEnergy) {
         var latlng = L.latLng(lat, lng);
-        var marker = L.marker(latlng).addTo(map);
+
+        // Choose icon based on availability
+        var iconUrl = iconUrls[availability] || iconUrls['Unknown']; // Default to 'Unknown' if status is not recognized
+
+        var customIcon = L.icon({
+            iconUrl: iconUrl,
+            iconSize: [32, 32], // Size of the icon
+            iconAnchor: [16, 32], // Anchor of the icon
+            popupAnchor: [0, -32] // Popup anchor
+        });
+
+        var marker = L.marker(latlng, { icon: customIcon }).addTo(map);
 
         var popupContent = `<b>Station ID:</b> ${id}<br>
                                 <b>Availability:</b> ${availability}<br>
