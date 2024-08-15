@@ -1,0 +1,4099 @@
+{
+    "EVSEData": [
+        {
+            "EVSEDataRecord": [
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Bern",
+                        "Country": "CHE",
+                        "PostalCode": "3018",
+                        "Street": "Peyer Bern, Wangenstrasse 102",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 100,
+                            "powertype": "DC"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "GOFAST Bern-Niederwangen - by ewb"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "CCS Combo 2 Plug (Cable Attached)"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10302",
+                    "GeoCoordinates": {
+                        "Google": "46.932974 7.386187"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.052Z",
+                    "EvseID": "CH*SWI*E10302",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "Accessibility": "Free publicly accessible",
+                    "Address": {
+                        "City": "H\u00fcnenberg",
+                        "Country": "CHE",
+                        "Street": "Dorfg\u00e4ssli",
+                        "PostalCode": "6331",
+                        "TimeZone": "UTC+02:00",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "DynamicInfoAvailable": "true",
+                    "EvseID": "CHEVPE2675",
+                    "GeoCoordinates": {
+                        "Google": "47.175178 8.426471"
+                    },
+                    "HotlinePhoneNumber": "+41582219660",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "AdditionalInfo": null,
+                    "AuthenticationModes": [
+                        "REMOTE",
+                        "NFC RFID Classic",
+                        "NFC RFID DESFire",
+                        "Direct Payment"
+                    ],
+                    "ChargingFacilities": [
+                        {
+                            "Amperage": 32,
+                            "Voltage": 230,
+                            "power": 7.0,
+                            "powertype": "AC_1_PHASE"
+                        },
+                        {
+                            "Amperage": 32,
+                            "Voltage": 400,
+                            "power": 22.0,
+                            "powertype": "AC_3_PHASE"
+                        },
+                        {
+                            "Amperage": 16,
+                            "Voltage": 230,
+                            "power": 3.7,
+                            "powertype": "AC_1_PHASE"
+                        }
+                    ],
+                    "ChargingStationId": "2313",
+                    "PaymentOptions": [
+                        "Contract",
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 1 Connector (Cable Attached)",
+                        "Type 2 Connector (Cable Attached)",
+                        "Type J Swiss Standard"
+                    ],
+                    "ValueAddedServices": [
+                        "MaximumPowerCharging"
+                    ],
+                    "ChargingStationNames": {
+                        "value": "EGH H\u00fcnenberg - N2 - 007",
+                        "lang": "en"
+                    },
+                    "RenewableEnergy": false,
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null,
+                    "HubOperatorID": null,
+                    "AccessibilityLocation": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Bern",
+                        "Country": "CHE",
+                        "PostalCode": "3018",
+                        "Street": "Peyer Bern, Wangenstrasse 102",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 50,
+                            "powertype": "DC"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "GOFAST Bern-Niederwangen - by ewb"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "CHAdeMO"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10302",
+                    "GeoCoordinates": {
+                        "Google": "46.932974 7.386187"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.052Z",
+                    "EvseID": "CH*SWI*E10303",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Bern",
+                        "Country": "CHE",
+                        "PostalCode": "3018",
+                        "Street": "Peyer Bern, Wangenstrasse 102",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 100,
+                            "powertype": "DC"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "GOFAST Bern-Niederwangen - by ewb"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "CCS Combo 2 Plug (Cable Attached)"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10302",
+                    "GeoCoordinates": {
+                        "Google": "46.932974 7.386187"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.052Z",
+                    "EvseID": "CH*SWI*E10304",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Grenchen",
+                        "Country": "CHE",
+                        "PostalCode": "2540",
+                        "Street": "Br\u00fchlstrasse 15",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "SWG Aussenparkplatz Nord"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10662",
+                    "GeoCoordinates": {
+                        "Google": "47.188216 7.401496"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.054Z",
+                    "EvseID": "CH*SWI*E10662",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Bern",
+                        "Country": "CHE",
+                        "PostalCode": "3018",
+                        "Street": "Peyer Bern, Wangenstrasse 102",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "GOFAST Bern-Niederwangen - by ewb"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10302",
+                    "GeoCoordinates": {
+                        "Google": "46.932974 7.386187"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.052Z",
+                    "EvseID": "CH*SWI*E10306",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Lostorf",
+                        "Country": "CHE",
+                        "PostalCode": "4654",
+                        "Street": "Grundstrasse 1",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Suissetec Lostorf"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10382",
+                    "GeoCoordinates": {
+                        "Google": "47.37545935 7.94404536"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.054Z",
+                    "EvseID": "CH*SWI*E10383",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Lostorf",
+                        "Country": "CHE",
+                        "PostalCode": "4654",
+                        "Street": "Grundstrasse 1",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 20,
+                            "powertype": "DC"
+                        },
+                        {
+                            "power": 20,
+                            "powertype": "DC"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Suissetec Lostorf"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "CCS Combo 2 Plug (Cable Attached)",
+                        "CHAdeMO"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10382",
+                    "GeoCoordinates": {
+                        "Google": "47.37545935 7.94404536"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.054Z",
+                    "EvseID": "CH*SWI*E10382",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Uster",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Z\u00fcrichstrasse 2",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Kern S\u00fcd Parkhaus"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10760",
+                    "GeoCoordinates": {
+                        "Google": "47.348979 8.717593"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E233495",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Uster",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Z\u00fcrichstrasse 2",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Kern S\u00fcd Parkhaus"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10760",
+                    "GeoCoordinates": {
+                        "Google": "47.348979 8.717593"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E10760",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Uster",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Z\u00fcrichstrasse 2",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Kern S\u00fcd Parkhaus"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10760",
+                    "GeoCoordinates": {
+                        "Google": "47.348979 8.717593"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E233496",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Esslingen",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Forchstrasse 4",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Ladestation 1 (Rechts)"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E108334",
+                    "GeoCoordinates": {
+                        "Google": "47.28752013 8.71095613"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E108334",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Grenchen",
+                        "Country": "CHE",
+                        "PostalCode": "2540",
+                        "Street": "Br\u00fchlstrasse 15",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "SWG Aussenparkplatz Nord"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10662",
+                    "GeoCoordinates": {
+                        "Google": "47.188216 7.401496"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.054Z",
+                    "EvseID": "CH*SWI*E10663",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Uster",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Z\u00fcrichstrasse 2",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Kern S\u00fcd Parkhaus"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E10760",
+                    "GeoCoordinates": {
+                        "Google": "47.348979 8.717593"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E10761",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Esslingen",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Forchstrasse 4",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Ladestation 1 (Rechts)"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E108334",
+                    "GeoCoordinates": {
+                        "Google": "47.28752013 8.71095613"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E130062",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Sursee",
+                        "Country": "CHE",
+                        "PostalCode": "6210",
+                        "Street": "Schellenrainstrasse 13,",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Enkom AG"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E11024",
+                    "GeoCoordinates": {
+                        "Google": "47.167236 8.104228"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E11024",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Sursee",
+                        "Country": "CHE",
+                        "PostalCode": "6210",
+                        "Street": "Schellenrainstrasse 13,",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Enkom AG"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E11024",
+                    "GeoCoordinates": {
+                        "Google": "47.167236 8.104228"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E11025",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Luzern",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Z\u00fcrcherstrasse 11",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 11,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Parkhaus L\u00f6wencenter"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E11042",
+                    "GeoCoordinates": {
+                        "Google": "47.05663687 8.31016189"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E11044",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Luzern",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Z\u00fcrcherstrasse 11",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 11,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Parkhaus L\u00f6wencenter"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E11042",
+                    "GeoCoordinates": {
+                        "Google": "47.05663687 8.31016189"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E125082",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Luzern",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Z\u00fcrcherstrasse 11",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 11,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Parkhaus L\u00f6wencenter"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E11042",
+                    "GeoCoordinates": {
+                        "Google": "47.05663687 8.31016189"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E11042",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Luzern",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Z\u00fcrcherstrasse 11",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 11,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Parkhaus L\u00f6wencenter"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E11042",
+                    "GeoCoordinates": {
+                        "Google": "47.05663687 8.31016189"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E11043",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Basel",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Burgfelderstrasse 101",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 16,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "IWB - Felix Platter-Spital (100% \u00d6kostrom)"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E112409",
+                    "GeoCoordinates": {
+                        "Google": "47.5645498 7.5669566"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E112406",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Schafhausen",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Schweizersbildstrasse 48",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Elektro Meister AG 1, Schaffhausen"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E1123",
+                    "GeoCoordinates": {
+                        "Google": "47.72261 8.643419"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E143126",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Basel",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Burgfelderstrasse 101",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 16,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "IWB - Felix Platter-Spital (100% \u00d6kostrom)"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E112409",
+                    "GeoCoordinates": {
+                        "Google": "47.5645498 7.5669566"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E112407",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Schafhausen",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Schweizersbildstrasse 48",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        },
+                        {
+                            "power": 4,
+                            "powertype": "AC_1_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Elektro Meister AG 1, Schaffhausen"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet",
+                        "Type F Schuko"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E1123",
+                    "GeoCoordinates": {
+                        "Google": "47.72261 8.643419"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E1123",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Luzern",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Z\u00fcrcherstrasse 11",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 11,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Parkhaus L\u00f6wencenter"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E11042",
+                    "GeoCoordinates": {
+                        "Google": "47.05663687 8.31016189"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E125084",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Luzern",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Z\u00fcrcherstrasse 11",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 11,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Parkhaus L\u00f6wencenter"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E11042",
+                    "GeoCoordinates": {
+                        "Google": "47.05663687 8.31016189"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E125083",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Schafhausen",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Schweizersbildstrasse 48",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Elektro Meister AG 1, Schaffhausen"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E1123",
+                    "GeoCoordinates": {
+                        "Google": "47.72261 8.643419"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.058Z",
+                    "EvseID": "CH*SWI*E143125",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Basel",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Burgfelderstrasse 101",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 16,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "IWB - Felix Platter-Spital (100% \u00d6kostrom)"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E112409",
+                    "GeoCoordinates": {
+                        "Google": "47.5645498 7.5669566"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E112410",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Z\u00fcrich",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Wehntalerstrasse",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 50,
+                            "powertype": "DC"
+                        },
+                        {
+                            "power": 50,
+                            "powertype": "DC"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "ewz Wehntalerstrasse 580 Z\u00fcrich"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "CCS Combo 2 Plug (Cable Attached)",
+                        "CHAdeMO"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E112824",
+                    "GeoCoordinates": {
+                        "Google": "47.420278 8.503611"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E112825",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Basel",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Burgfelderstrasse 101",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 16,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "IWB - Felix Platter-Spital (100% \u00d6kostrom)"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E112409",
+                    "GeoCoordinates": {
+                        "Google": "47.5645498 7.5669566"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E112409",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Z\u00fcrich",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Wehntalerstrasse",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 43,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "ewz Wehntalerstrasse 580 Z\u00fcrich"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E112824",
+                    "GeoCoordinates": {
+                        "Google": "47.420278 8.503611"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E112824",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Biberist",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Aesplistrasse 1",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "EVB Viatte"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113447",
+                    "GeoCoordinates": {
+                        "Google": "47.190676 7.553462"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113447",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Zug",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Industriestrasse 14",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Industriestr. 14, Zug - PP Nr. 97"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E112936",
+                    "GeoCoordinates": {
+                        "Google": "47.17207188 8.51858611"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E112936",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Zug",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Industriestrasse 14",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Industriestr. 14, Zug - PP Nr. 97"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E112936",
+                    "GeoCoordinates": {
+                        "Google": "47.17207188 8.51858611"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E112932",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Vich",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Chemin de la Bichette 4",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Vich"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113521",
+                    "GeoCoordinates": {
+                        "Google": "46.423945 6.2549267"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113521",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Basel",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Dufourstrasse 40",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Dufourstrasse 40/50 GVA"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113031",
+                    "GeoCoordinates": {
+                        "Google": "47.5524011 7.5927673"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113031",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Biberist",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Aesplistrasse 1",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "EVB Viatte"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113447",
+                    "GeoCoordinates": {
+                        "Google": "47.190676 7.553462"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113450",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Les Diablerets",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Route du Pillon 58",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Les Diablerets"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113519",
+                    "GeoCoordinates": {
+                        "Google": "46.353841 7.1501154"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113519",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Ch\u00e2tel-St-Denis",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Chemin des Chardonnerets 14",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Ch\u00e2tel-Saint-Denis"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113523",
+                    "GeoCoordinates": {
+                        "Google": "46.523072 6.8974636"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113524",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Vich",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Chemin de la Bichette 4",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Vich"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113521",
+                    "GeoCoordinates": {
+                        "Google": "46.423945 6.2549267"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113522",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Vich",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Chemin de la Bichette 4",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Vich"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113521",
+                    "GeoCoordinates": {
+                        "Google": "46.423945 6.2549267"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E117146",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Les Diablerets",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Route du Pillon 58",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Les Diablerets"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113519",
+                    "GeoCoordinates": {
+                        "Google": "46.353841 7.1501154"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113520",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Vich",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Chemin de la Bichette 4",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Vich"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113521",
+                    "GeoCoordinates": {
+                        "Google": "46.423945 6.2549267"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E117145",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Biberist",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Hauptstrasse 44",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Biberist"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113545",
+                    "GeoCoordinates": {
+                        "Google": "47.181572 7.5634409"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113545",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Ch\u00e2tel-St-Denis",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Chemin des Chardonnerets 14",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Ch\u00e2tel-Saint-Denis"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113523",
+                    "GeoCoordinates": {
+                        "Google": "46.523072 6.8974636"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113523",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Biel",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Nidaugasse 35",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Biel Nidaugasse"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113532",
+                    "GeoCoordinates": {
+                        "Google": "47.139088 7.2473675"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113532",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Basel",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Centralbahnpl. 3/4",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Hotel Victoria Basel"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113534",
+                    "GeoCoordinates": {
+                        "Google": "47.5472991 7.59231203"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113534",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Thun",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Schulstrasse 32",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Thun Str\u00e4ttligen Markt"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E115064",
+                    "GeoCoordinates": {
+                        "Google": "46.740399 7.6222611"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.060Z",
+                    "EvseID": "CH*SWI*E115065",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Biel",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Nidaugasse 35",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Biel Nidaugasse"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113532",
+                    "GeoCoordinates": {
+                        "Google": "47.139088 7.2473675"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113533",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Zollikofen",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "M\u00e4ritgasse 1",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Zollikofen"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E117076",
+                    "GeoCoordinates": {
+                        "Google": "46.997371 7.458359"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.060Z",
+                    "EvseID": "CH*SWI*E117077",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Biberist",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Hauptstrasse 44",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Biberist"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113545",
+                    "GeoCoordinates": {
+                        "Google": "47.181572 7.5634409"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113546",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Bern",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Kasparstrasse 7/9",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Bern Bethlehem"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113543",
+                    "GeoCoordinates": {
+                        "Google": "46.950698 7.3927387"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113543",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Zollikofen",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "M\u00e4ritgasse 1",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Zollikofen"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E117076",
+                    "GeoCoordinates": {
+                        "Google": "46.997371 7.458359"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.060Z",
+                    "EvseID": "CH*SWI*E117076",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Thun",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Schulstrasse 32",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Thun Str\u00e4ttligen Markt"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E115064",
+                    "GeoCoordinates": {
+                        "Google": "46.740399 7.6222611"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.060Z",
+                    "EvseID": "CH*SWI*E115064",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Oberwil",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "M\u00fchlemattstrasse 34",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Oberwil M\u00fchlematt"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E117082",
+                    "GeoCoordinates": {
+                        "Google": "47.508007 7.5533179"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.060Z",
+                    "EvseID": "CH*SWI*E117083",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Basel",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Centralbahnpl. 3/4",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Hotel Victoria Basel"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113534",
+                    "GeoCoordinates": {
+                        "Google": "47.5472991 7.59231203"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113535",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                },
+                {
+                    "AccessibilityLocation": "OnStreet",
+                    "Address": {
+                        "HouseNum": "0",
+                        "TimeZone": "UTC+01:00",
+                        "City": "Bern",
+                        "Country": "CHE",
+                        "PostalCode": "0",
+                        "Street": "Kasparstrasse 7/9",
+                        "Floor": null,
+                        "Region": null,
+                        "ParkingSpot": null,
+                        "ParkingFacility": null
+                    },
+                    "AuthenticationModes": [
+                        "NFC RFID Classic",
+                        "REMOTE"
+                    ],
+                    "CalibrationLawDataAvailability": "Not Available",
+                    "ChargingFacilities": [
+                        {
+                            "power": 22,
+                            "powertype": "AC_3_PHASE"
+                        }
+                    ],
+                    "ChargingStationNames": [
+                        {
+                            "lang": "de",
+                            "value": "Energie 360\u00b0 Coop Bern Bethlehem"
+                        }
+                    ],
+                    "DynamicInfoAvailable": "true",
+                    "HotlinePhoneNumber": "+41713881150",
+                    "HubOperatorID": "CH*SWISSCHARGE",
+                    "IsHubjectCompatible": true,
+                    "IsOpen24Hours": true,
+                    "PaymentOptions": [
+                        "Direct"
+                    ],
+                    "Plugs": [
+                        "Type 2 Outlet"
+                    ],
+                    "RenewableEnergy": false,
+                    "ValueAddedServices": [
+                        "None"
+                    ],
+                    "deltaType": "insert",
+                    "Accessibility": "Free publicly accessible",
+                    "ChargingStationId": "CH*SWI*E113543",
+                    "GeoCoordinates": {
+                        "Google": "46.950698 7.3927387"
+                    },
+                    "lastUpdate": "2024-08-12T02:15:04.059Z",
+                    "EvseID": "CH*SWI*E113544",
+                    "ClearinghouseID": null,
+                    "OpeningTimes": null,
+                    "GeoChargingPointEntrance": {
+                        "Google": "None None"
+                    },
+                    "ChargingStationLocationReference": null,
+                    "EnergySource": null,
+                    "EnvironmentalImpact": null,
+                    "LocationImage": null,
+                    "SuboperatorName": null,
+                    "MaxCapacity": null,
+                    "AdditionalInfo": null,
+                    "ChargingPoolID": null,
+                    "DynamicPowerLevel": null,
+                    "HardwareManufacturer": null
+                }                
+            ],
+            "OperatorID": "CH*SHE",
+            "OperatorName": "Shell Recharge"
+        }
+    ]
+}

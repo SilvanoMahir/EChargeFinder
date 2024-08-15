@@ -3,6 +3,9 @@
 @using System.Diagnostics
 @using EChargeFinder
 @using EChargeFinder.Core
+@using System;
+@using System.Net.Http;
+@using System.Threading.Tasks;
 
 @inject IJSRuntime JSRuntime
 
@@ -15,6 +18,8 @@
     private List<EVSEDataRecord> chargingStations = new List<EVSEDataRecord>();
     private List<BaseData> chargingStationsInfos = new List<BaseData>();
 
+    private JSONCleanUp jsonCleanUp = new JSONCleanUp();
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
@@ -26,12 +31,41 @@
 
     private async Task InitializeMapAsync()
     {
-        string jsonData = File.ReadAllText("C:\\Users\\Silvano\\Git\\EChargeFinder\\Resources\\JSON\\charging_stations.json");
-        string jsonDataAvailability = File.ReadAllText("C:\\Users\\Silvano\\Git\\EChargeFinder\\Resources\\JSON\\charging_stations_availability.json");
+        string jsonData = "";
+        string jsonDataAvailability = "";
+
+        // Create an HttpClient instance and fetch the data
+        using (HttpClient client = new HttpClient())
+        {
+            try
+            {
+                //get stations meta data
+                HttpResponseMessage response = await client.GetAsync("https://data.geo.admin.ch/ch.bfe.ladestellen-elektromobilitaet/data/oicp/ch.bfe.ladestellen-elektromobilitaet.json");
+                response.EnsureSuccessStatusCode();
+                string jsonResponse = await response.Content.ReadAsStringAsync();
+                var jsonObject = JsonSerializer.Deserialize<JsonElement>(jsonResponse);
+                jsonData = JsonSerializer.Serialize(jsonObject, new JsonSerializerOptions { WriteIndented = true });
+
+                //get stations status
+                HttpResponseMessage responseAvailability = await client.GetAsync("https://data.geo.admin.ch/ch.bfe.ladestellen-elektromobilitaet/status/oicp/ch.bfe.ladestellen-elektromobilitaet.json");
+                responseAvailability.EnsureSuccessStatusCode();
+                string jsonResponseAvailability = await responseAvailability.Content.ReadAsStringAsync();
+                var jsonObjectAvailability = JsonSerializer.Deserialize<JsonElement>(jsonResponseAvailability);
+                jsonDataAvailability = JsonSerializer.Serialize(jsonObjectAvailability, new JsonSerializerOptions { WriteIndented = true });
+            }
+            catch (HttpRequestException e)
+            {
+                Console.WriteLine("Request error: " + e.Message);
+            }
+        }
+
+        // the stations meta data is not consistent, so fix had to be implemented 
+        var jsonData1 = jsonCleanUp.cleanUpChargingStationAPINamingError(jsonData);
 
         try
         {
-            var rootData = JsonSerializer.Deserialize<LoadingStationInfos>(jsonData);
+            //string jsonData1 = File.ReadAllText(path4);
+            var rootData = JsonSerializer.Deserialize<LoadingStationInfos>(jsonData1);
             var statusData = JsonSerializer.Deserialize<EVSEStatusesList>(jsonDataAvailability);
 
             chargingStations = rootData.EVSEData.SelectMany(e => e.EVSEDataRecord).ToList();
@@ -41,6 +75,11 @@
                 var availabilityStatus = statusData.EVSEStatuses
                     .SelectMany(status => status.EVSEStatusRecord)
                     .FirstOrDefault(record => record.EvseID == singleStation.EvseID);
+
+                if (availabilityStatus == null)
+                {
+                    availabilityStatus = new EVSEStatusRecord { EvseID = singleStation.EvseID, EVSEStatus = "Unknown" };
+                }
 
                 chargingStationsInfos.Add(new BaseData
                     {
@@ -97,10 +136,10 @@
         chargingStationsInfos.forEach(function (stationInfo) {
             var lngLat = [parseFloat(stationInfo.lng), parseFloat(stationInfo.lat)];
             var popupHtml = `<b>Charging Station ID:</b> ${stationInfo.chargingStationId}<br/>
-                             <b>RenewableEnergy:</b> ${stationInfo.renewableEnergy}<br/>
-                             <b>EvseID:</b> ${stationInfo.dataRecord.EvseID}<br/>
-                             <b>Availability:</b> ${stationInfo.availability}<br/>
-                             <b>Location:</b> (${stationInfo.lat}, ${stationInfo.lng})`;
+                                 <b>RenewableEnergy:</b> ${stationInfo.renewableEnergy}<br/>
+                                 <b>EvseID:</b> ${stationInfo.dataRecord.EvseID}<br/>
+                                 <b>Availability:</b> ${stationInfo.availability}<br/>
+                                 <b>Location:</b> (${stationInfo.lat}, ${stationInfo.lng})`;
             var iconUrl;
             switch (stationInfo.availability) {
                 case 'Available':
