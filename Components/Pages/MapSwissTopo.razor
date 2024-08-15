@@ -1,6 +1,8 @@
 ﻿@page "/mapSwissTopo"
 @using System.Text.Json
 @using System.Diagnostics
+@using EChargeFinder
+@using EChargeFinder.Core
 
 @inject IJSRuntime JSRuntime
 
@@ -11,7 +13,7 @@
 @code {
 
     private List<EVSEDataRecord> chargingStations = new List<EVSEDataRecord>();
-    private List<GeoCoordinates> chargingStationsCoordinates = new List<GeoCoordinates>();
+    private List<BaseData> chargingStationsInfos = new List<BaseData>();
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -25,34 +27,44 @@
     private async Task InitializeMapAsync()
     {
         string jsonData = File.ReadAllText("C:\\Users\\Silvano\\Git\\EChargeFinder\\Resources\\JSON\\charging_stations.json");
+        string jsonDataAvailability = File.ReadAllText("C:\\Users\\Silvano\\Git\\EChargeFinder\\Resources\\JSON\\charging_stations_availability.json");
+
         try
         {
-            var rootData = JsonSerializer.Deserialize<Root>(jsonData);
+            var rootData = JsonSerializer.Deserialize<LoadingStationInfos>(jsonData);
+            var statusData = JsonSerializer.Deserialize<EVSEStatusesList>(jsonDataAvailability);
+
             chargingStations = rootData.EVSEData.SelectMany(e => e.EVSEDataRecord).ToList();
+
             foreach (var singleStation in chargingStations)
             {
-                chargingStationsCoordinates.Add(singleStation.GeoCoordinates);
+                var availabilityStatus = statusData.EVSEStatuses
+                    .SelectMany(status => status.EVSEStatusRecord)
+                    .FirstOrDefault(record => record.EvseID == singleStation.EvseID);
+
+                chargingStationsInfos.Add(new BaseData
+                    {
+                        dataRecord = singleStation,
+                        lat = singleStation.GeoCoordinates.Google.Split(' ')[0],
+                        lng = singleStation.GeoCoordinates.Google.Split(' ')[1],
+                        chargingStationId = singleStation.ChargingStationId,
+                        renewableEnergy = singleStation.RenewableEnergy,
+                        availability = availabilityStatus.EVSEStatus
+                    });
             }
         }
         catch (Exception ex)
         {
             Debug.WriteLine(ex.Message);
         }
-        var coordinatesArray = chargingStationsCoordinates
-            .Select(c => new
-            {
-                lat = c.Google.Split(' ')[0],
-                lng = c.Google.Split(' ')[1]
-            })
-            .ToArray();
 
-        await JSRuntime.InvokeVoidAsync("initializeMap", (object)coordinatesArray);
+        await JSRuntime.InvokeVoidAsync("initializeMap", (List<BaseData>)chargingStationsInfos);
     }
 }
 
 @* Inline JavaScript in Blazor *@
 <script>
-    function initializeMap(coordinatesArray) {
+    function initializeMap(chargingStationsInfos) {
         var map = new maplibregl.Map({
             container: 'maplibre-map',
             style: 'https://vectortiles.geo.admin.ch/styles/ch.swisstopo.leichte-basiskarte_world.vt/style.json',
@@ -61,13 +73,14 @@
         });
         map.addControl(new maplibregl.NavigationControl());
 
-        function addMarker(lngLat, iconUrl, popupText) {
+        function addMarker(lngLat, iconUrl, popupHtml) {
             var customIcon = document.createElement('img');
             customIcon.src = iconUrl;
             customIcon.style.width = '30px';  // Set the width of the icon
             customIcon.style.height = '30px'; // Set the height of the icon
 
-            var popup = new maplibregl.Popup({ offset: 25 }).setText(popupText);
+            var popup = new maplibregl.Popup({ offset: 25 })
+                .setHTML(popupHtml);
 
             new maplibregl.Marker({ element: customIcon })
                 .setLngLat(lngLat)
@@ -75,14 +88,38 @@
                 .addTo(map);
         }
 
-        var iconUrl = 'https://cdn4.iconfinder.com/data/icons/automotive-maintenance/100/automotive-electriccharger-512.png';
+        var iconUrlAvailable = 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=10C027';
+        var iconUrlOccupied = 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=FF0303';
+        var iconUrlOutOfService = 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=FCC419';
+        var iconUrlUnknown = 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=7B7B7B';
 
-        // Adding markers based on the coordinates passed from C#
-        coordinatesArray.forEach(function (coordinate) {
-            var lngLat = [parseFloat(coordinate.lng), parseFloat(coordinate.lat)];
-            addMarker(lngLat, iconUrl, `Charging Station at (${coordinate.lat}, ${coordinate.lng})`);
+        // Most likely base type data types are have to be used otherwise it is undefined
+        chargingStationsInfos.forEach(function (stationInfo) {
+            var lngLat = [parseFloat(stationInfo.lng), parseFloat(stationInfo.lat)];
+            var popupHtml = `<b>Charging Station ID:</b> ${stationInfo.chargingStationId}<br/>
+                             <b>RenewableEnergy:</b> ${stationInfo.renewableEnergy}<br/>
+                             <b>EvseID:</b> ${stationInfo.dataRecord.EvseID}<br/>
+                             <b>Availability:</b> ${stationInfo.availability}<br/>
+                             <b>Location:</b> (${stationInfo.lat}, ${stationInfo.lng})`;
+            var iconUrl;
+            switch (stationInfo.availability) {
+                case 'Available':
+                    iconUrl = iconUrlAvailable;
+                    break;
+                case 'Occupied':
+                    iconUrl = iconUrlOccupied;
+                    break;
+                case 'OutOfService':
+                    iconUrl = iconUrlOutOfService;
+                    break;
+                case 'Unknown':
+                default:
+                    iconUrl = iconUrlUnknown;
+                    break;
+            }
+
+            addMarker(lngLat, iconUrl, popupHtml);
         });
     }
 </script>
-
 

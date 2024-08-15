@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EChargeFinder
+﻿namespace EChargeFinder.Core
 {
     public class Address
     {
@@ -61,8 +55,18 @@ namespace EChargeFinder
         public List<EVSEDataRecord> EVSEDataRecord { get; set; }
     }
 
-    public class Root
+    public class LoadingStationInfos
     {
         public List<EVSEData> EVSEData { get; set; }
+    }
+
+    public class BaseData
+    {
+        public EVSEDataRecord dataRecord { get; set; }
+        public string lat { get; set; }
+        public string lng { get; set; }
+        public string chargingStationId { get; set; } // Add this line
+        public bool renewableEnergy { get; set; }
+        public string availability { get; set; }
     }
 }
