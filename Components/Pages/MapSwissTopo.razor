@@ -14,90 +14,86 @@
 <div id="maplibre-map" style="width: 100%; height: 500px;"></div>
 
 @code {
-
     private List<EVSEDataRecord> chargingStations = new List<EVSEDataRecord>();
     private List<BaseData> chargingStationsInfos = new List<BaseData>();
-
-    private JSONCleanUp jsonCleanUp = new JSONCleanUp();
+    private readonly HttpClient _httpClient = new HttpClient();
+    private readonly JSONCleanUp _jsonCleanUp = new JSONCleanUp();
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-            // Call the JavaScript function to initialize the map
             await InitializeMapAsync();
         }
     }
 
     private async Task InitializeMapAsync()
     {
-        string jsonData = "";
-        string jsonDataAvailability = "";
-
-        // Create an HttpClient instance and fetch the data
-        using (HttpClient client = new HttpClient())
-        {
-            try
-            {
-                //get stations meta data
-                HttpResponseMessage response = await client.GetAsync("https://data.geo.admin.ch/ch.bfe.ladestellen-elektromobilitaet/data/oicp/ch.bfe.ladestellen-elektromobilitaet.json");
-                response.EnsureSuccessStatusCode();
-                string jsonResponse = await response.Content.ReadAsStringAsync();
-                var jsonObject = JsonSerializer.Deserialize<JsonElement>(jsonResponse);
-                jsonData = JsonSerializer.Serialize(jsonObject, new JsonSerializerOptions { WriteIndented = true });
-
-                //get stations status
-                HttpResponseMessage responseAvailability = await client.GetAsync("https://data.geo.admin.ch/ch.bfe.ladestellen-elektromobilitaet/status/oicp/ch.bfe.ladestellen-elektromobilitaet.json");
-                responseAvailability.EnsureSuccessStatusCode();
-                string jsonResponseAvailability = await responseAvailability.Content.ReadAsStringAsync();
-                var jsonObjectAvailability = JsonSerializer.Deserialize<JsonElement>(jsonResponseAvailability);
-                jsonDataAvailability = JsonSerializer.Serialize(jsonObjectAvailability, new JsonSerializerOptions { WriteIndented = true });
-            }
-            catch (HttpRequestException e)
-            {
-                Console.WriteLine("Request error: " + e.Message);
-            }
-        }
-
-        // the stations meta data is not consistent, so fix had to be implemented 
-        var jsonData1 = jsonCleanUp.cleanUpChargingStationAPINamingError(jsonData);
+        string metadataUrl = "https://data.geo.admin.ch/ch.bfe.ladestellen-elektromobilitaet/data/oicp/ch.bfe.ladestellen-elektromobilitaet.json";
+        string statusUrl = "https://data.geo.admin.ch/ch.bfe.ladestellen-elektromobilitaet/status/oicp/ch.bfe.ladestellen-elektromobilitaet.json";
 
         try
         {
-            //string jsonData1 = File.ReadAllText(path4);
-            var rootData = JsonSerializer.Deserialize<LoadingStationInfos>(jsonData1);
-            var statusData = JsonSerializer.Deserialize<EVSEStatusesList>(jsonDataAvailability);
+            // Fetch data in parallel
+            var fetchMetadataTask = _httpClient.GetStringAsync(metadataUrl);
+            var fetchStatusTask = _httpClient.GetStringAsync(statusUrl);
 
-            chargingStations = rootData.EVSEData.SelectMany(e => e.EVSEDataRecord).ToList();
+            // Await the completion of both tasks
+            var metadataResponse = await fetchMetadataTask;
+            var statusResponse = await fetchStatusTask;
 
-            foreach (var singleStation in chargingStations)
+            // Parse JSON data
+            var metadataJson = JsonDocument.Parse(metadataResponse).RootElement;
+            var statusJson = JsonDocument.Parse(statusResponse).RootElement;
+
+            // Clean and deserialize JSON data
+            var cleanedJsonData = _jsonCleanUp.cleanUpChargingStationAPINamingError(metadataJson.ToString());
+            var rootData = JsonSerializer.Deserialize<LoadingStationInfos>(cleanedJsonData);
+            var statusData = JsonSerializer.Deserialize<EVSEStatusesList>(statusJson.ToString());
+
+            // Process and populate data
+            if (rootData?.EVSEData != null)
             {
-                var availabilityStatus = statusData.EVSEStatuses
-                    .SelectMany(status => status.EVSEStatusRecord)
-                    .FirstOrDefault(record => record.EvseID == singleStation.EvseID);
+                chargingStations = rootData.EVSEData.SelectMany(e => e.EVSEDataRecord).ToList();
+            }
 
-                if (availabilityStatus == null)
-                {
-                    availabilityStatus = new EVSEStatusRecord { EvseID = singleStation.EvseID, EVSEStatus = "Unknown" };
-                }
+            var availabilityStatuses = statusData?.EVSEStatuses
+                .SelectMany(status => status.EVSEStatusRecord)
+                .ToDictionary(record => record.EvseID, record => record.EVSEStatus);
 
-                chargingStationsInfos.Add(new BaseData
+            // Concurrently process charging station info
+            var tasks = chargingStations.Select(async singleStation =>
+            {
+                var availabilityStatus = availabilityStatuses.GetValueOrDefault(singleStation.EvseID, "Unknown");
+
+                var baseData = new BaseData
                     {
                         dataRecord = singleStation,
                         lat = singleStation.GeoCoordinates.Google.Split(' ')[0],
                         lng = singleStation.GeoCoordinates.Google.Split(' ')[1],
                         chargingStationId = singleStation.ChargingStationId,
                         renewableEnergy = singleStation.RenewableEnergy,
-                        availability = availabilityStatus.EVSEStatus
-                    });
-            }
+                        availability = availabilityStatus
+                    };
+
+                lock (chargingStationsInfos) // Ensure thread safety
+                {
+                    chargingStationsInfos.Add(baseData);
+                }
+            });
+
+            await Task.WhenAll(tasks);
+        }
+        catch (HttpRequestException e)
+        {
+            Debug.WriteLine($"Request error: {e.Message}");
         }
         catch (Exception ex)
         {
-            Debug.WriteLine(ex.Message);
+            Debug.WriteLine($"Error: {ex.Message}");
         }
 
-        await JSRuntime.InvokeVoidAsync("initializeMap", (List<BaseData>)chargingStationsInfos);
+        await JSRuntime.InvokeVoidAsync("initializeMap", chargingStationsInfos);
     }
 }
 
@@ -107,57 +103,39 @@
         var map = new maplibregl.Map({
             container: 'maplibre-map',
             style: 'https://vectortiles.geo.admin.ch/styles/ch.swisstopo.leichte-basiskarte_world.vt/style.json',
-            center: [8.265, 46.786], // starting position [lng, lat]
-            zoom: 7, // starting zoom
+            center: [8.265, 46.786],
+            zoom: 7,
         });
         map.addControl(new maplibregl.NavigationControl());
 
-        function addMarker(lngLat, iconUrl, popupHtml) {
+        const iconUrls = {
+            Available: 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=10C027',
+            Occupied: 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=FF0303',
+            OutOfService: 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=FCC419',
+            Unknown: 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=7B7B7B'
+        };
+
+        // Create markers in a batch if possible
+        chargingStationsInfos.forEach(stationInfo => {
+            var lngLat = [parseFloat(stationInfo.lng), parseFloat(stationInfo.lat)];
+            var iconUrl = iconUrls[stationInfo.availability] || iconUrls.Unknown;
+            var popupHtml = `<b>Charging Station ID:</b> ${stationInfo.chargingStationId}<br/>
+                             <b>RenewableEnergy:</b> ${stationInfo.renewableEnergy}<br/>
+                             <b>EvseID:</b> ${stationInfo.dataRecord.EvseID}<br/>
+                             <b>Availability:</b> ${stationInfo.availability}<br/>
+                             <b>Location:</b> (${stationInfo.lat}, ${stationInfo.lng})`;
+
             var customIcon = document.createElement('img');
             customIcon.src = iconUrl;
-            customIcon.style.width = '30px';  // Set the width of the icon
-            customIcon.style.height = '30px'; // Set the height of the icon
+            customIcon.style.width = '30px';
+            customIcon.style.height = '30px';
 
-            var popup = new maplibregl.Popup({ offset: 25 })
-                .setHTML(popupHtml);
+            var popup = new maplibregl.Popup({ offset: 25 }).setHTML(popupHtml);
 
             new maplibregl.Marker({ element: customIcon })
                 .setLngLat(lngLat)
                 .setPopup(popup)
                 .addTo(map);
-        }
-
-        var iconUrlAvailable = 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=10C027';
-        var iconUrlOccupied = 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=FF0303';
-        var iconUrlOutOfService = 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=FCC419';
-        var iconUrlUnknown = 'https://img.icons8.com/?size=100&id=X4QWt0vNygCb&format=png&color=7B7B7B';
-
-        // Most likely base type data types are have to be used otherwise it is undefined
-        chargingStationsInfos.forEach(function (stationInfo) {
-            var lngLat = [parseFloat(stationInfo.lng), parseFloat(stationInfo.lat)];
-            var popupHtml = `<b>Charging Station ID:</b> ${stationInfo.chargingStationId}<br/>
-                                 <b>RenewableEnergy:</b> ${stationInfo.renewableEnergy}<br/>
-                                 <b>EvseID:</b> ${stationInfo.dataRecord.EvseID}<br/>
-                                 <b>Availability:</b> ${stationInfo.availability}<br/>
-                                 <b>Location:</b> (${stationInfo.lat}, ${stationInfo.lng})`;
-            var iconUrl;
-            switch (stationInfo.availability) {
-                case 'Available':
-                    iconUrl = iconUrlAvailable;
-                    break;
-                case 'Occupied':
-                    iconUrl = iconUrlOccupied;
-                    break;
-                case 'OutOfService':
-                    iconUrl = iconUrlOutOfService;
-                    break;
-                case 'Unknown':
-                default:
-                    iconUrl = iconUrlUnknown;
-                    break;
-            }
-
-            addMarker(lngLat, iconUrl, popupHtml);
         });
     }
 </script>
