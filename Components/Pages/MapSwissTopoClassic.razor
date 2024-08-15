@@ -1,0 +1,125 @@
+﻿@page "/mapSwissTopoClassic"
+@using System.Text.Json
+@using System.Diagnostics
+@using EChargeFinder
+@using EChargeFinder.Core
+@using System;
+@using System.Net.Http;
+@using System.Threading.Tasks;
+
+@inject IJSRuntime JSRuntime
+
+<h1>SwissTopoMap Classic</h1>
+
+<div id="map" style="height: 500px;"></div>
+
+@code {
+    private List<EVSEDataRecord> chargingStations = new List<EVSEDataRecord>();
+    private List<BaseData> chargingStationsInfos = new List<BaseData>();
+    private readonly HttpClient _httpClient = new HttpClient();
+    private readonly JSONCleanUp _jsonCleanUp = new JSONCleanUp();
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            InitializeMapAsync();
+        }
+    }
+
+    private async Task InitializeMapAsync()
+    {
+        string metadataUrl = "https://data.geo.admin.ch/ch.bfe.ladestellen-elektromobilitaet/data/oicp/ch.bfe.ladestellen-elektromobilitaet.json";
+        string statusUrl = "https://data.geo.admin.ch/ch.bfe.ladestellen-elektromobilitaet/status/oicp/ch.bfe.ladestellen-elektromobilitaet.json";
+
+        try
+        {
+            // Fetch data in parallel
+            var fetchMetadataTask = _httpClient.GetStringAsync(metadataUrl);
+            var fetchStatusTask = _httpClient.GetStringAsync(statusUrl);
+
+            // Await the completion of both tasks
+            var metadataResponse = await fetchMetadataTask;
+            var statusResponse = await fetchStatusTask;
+
+            // Parse JSON data
+            var metadataJson = JsonDocument.Parse(metadataResponse).RootElement;
+            var statusJson = JsonDocument.Parse(statusResponse).RootElement;
+
+            // Clean and deserialize JSON data
+            var cleanedJsonData = _jsonCleanUp.cleanUpChargingStationAPINamingError(metadataJson.ToString());
+            var rootData = JsonSerializer.Deserialize<LoadingStationInfos>(cleanedJsonData);
+            var statusData = JsonSerializer.Deserialize<EVSEStatusesList>(statusJson.ToString());
+
+            // Process and populate data
+            if (rootData?.EVSEData != null)
+            {
+                chargingStations = rootData.EVSEData.SelectMany(e => e.EVSEDataRecord).ToList();
+            }
+
+            var availabilityStatuses = statusData?.EVSEStatuses
+                .SelectMany(status => status.EVSEStatusRecord)
+                .ToDictionary(record => record.EvseID, record => record.EVSEStatus);
+
+            // Concurrently process charging station info
+            var tasks = chargingStations.Select(async singleStation =>
+            {
+                var availabilityStatus = availabilityStatuses.GetValueOrDefault(singleStation.EvseID, "Unknown");
+
+                var baseData = new BaseData
+                    {
+                        dataRecord = singleStation,
+                        lat = singleStation.GeoCoordinates.Google.Split(' ')[0],
+                        lng = singleStation.GeoCoordinates.Google.Split(' ')[1],
+                        chargingStationId = singleStation.ChargingStationId,
+                        renewableEnergy = singleStation.RenewableEnergy,
+                        availability = availabilityStatus
+                    };
+
+                lock (chargingStationsInfos) // Ensure thread safety
+                {
+                    chargingStationsInfos.Add(baseData);
+                }
+            });
+
+            await Task.WhenAll(tasks);
+        }
+        catch (HttpRequestException e)
+        {
+            Debug.WriteLine($"Request error: {e.Message}");
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Error: {ex.Message}");
+        }
+        
+        await JSRuntime.InvokeVoidAsync("initializeMap");
+
+    }
+
+}
+
+@* Inline JavaScript in Blazor *@
+<script>
+    function initializeMap() {
+        var map = new L.Map('map', {
+            crs: L.CRS.EPSG3857,
+            continuousWorld: true,
+            worldCopyJump: false
+        });
+
+        var url = 'https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg';
+        var tilelayer = new L.tileLayer(url);
+        map.addLayer(tilelayer);
+
+        var latlng = L.latLng(46.57591, 7.84956);
+        map.setView(latlng, 8);
+
+        // Add a marker at the specified location
+        var marker = L.marker(latlng).addTo(map);
+
+        // Optionally, add a popup to the marker
+        marker.bindPopup("<b>Hello!</b><br>This is a marker on the map.").openPopup();
+    }
+</script>
